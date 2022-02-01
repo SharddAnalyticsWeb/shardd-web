@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 import IntroSection from '../components/IntroSection';
 import ServicesSection from '../components/ServicesSection';
 import ProjectSection from '../components/ProjectSection';
-import TestimonialsSection from "../components/TestimonialsSection";
+// import TestimonialsSection from "../components/TestimonialsSection";
 import ServicePopup from "../components/ServicePopup";
 import ProjectScreen from "../components/ProjectScreen";
 

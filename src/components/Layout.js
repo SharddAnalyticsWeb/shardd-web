@@ -1,7 +1,5 @@
 import React from 'react';
 import { MdMailOutline } from "@react-icons/all-files/md/MdMailOutline";
-import { MdCall } from "@react-icons/all-files/md/MdCall";
-import { RiPhoneLine } from "@react-icons/all-files/ri/RiPhoneLine";
 
 export default function Layout({ children }) {
   return(
@@ -15,7 +13,7 @@ export default function Layout({ children }) {
               <h1>Shardd Analytics</h1>
               <h2>Connect with us</h2>
               <a href='mailto:contact@shardd.in'><MdMailOutline />contact@shardd.in</a>
-              <p>Garvit Goswami:&emsp;&emsp;+91 98217 84848</p>
+              <p>Garvit Goswami:&emsp;&emsp;+91 76786 71314</p>
               <p>Pragyan Ojha:&emsp;&emsp;&emsp;+91 98217 84848</p>
             </div>
             <div className="copyright">

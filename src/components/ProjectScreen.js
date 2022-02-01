@@ -7,15 +7,20 @@ import projectData from '../data/projectData';
 export default function ProjectScreen({ projectScreen, setProjectScreen }) {
     const data = projectData[projectScreen.id];
 
+    const handleClose = () => {
+        setProjectScreen({id: projectScreen.id, isOpen: false});
+        setTimeout(() => setProjectScreen({id: -1, isOpen: false}), 250) // delay added to prevent 404 error showing during closing animation    
+        document.addEventListener('click', handleClose);
+
+        return () => {
+            document.removeEventListener('click', handleClose);
+        };
+    }
     return (
         <div 
             className="project-screen-container"
             style={projectScreen.isOpen ? {opacity: 1, pointerEvents: 'unset'} : null}
-            onClick={() => { 
-                setProjectScreen({id: projectScreen.id, isOpen: false});
-                setTimeout(() => setProjectScreen({id: -1, isOpen: false}), 250)} // delay added to prevent 404 error showing during closing animation    
-            }
-        >
+            onClick={() => handleClose()}>
             <div className="project-screen" style={projectScreen.isOpen ? {transform: 'none', opacity: 1} : null}>
                 {data ?
                     <> 

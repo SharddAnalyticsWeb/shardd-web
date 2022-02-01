@@ -14,7 +14,7 @@ export default function Layout({ children }) {
               <h2>Connect with us</h2>
               <a href='mailto:contact@shardd.in'><MdMailOutline />contact@shardd.in</a>
               <p>Garvit Goswami:&emsp;&emsp;+91 76786 71314</p>
-              <p>Pragyan Ojha:&emsp;&emsp;&emsp;+91 98217 84848</p>
+              <p>Pragyan Pandey:&emsp;&emsp;+91 98217 84848</p>
             </div>
             <div className="copyright">
                 <hr />

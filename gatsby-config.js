@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-      title: `shardd-web`,
+      title: `Shardd Analytics`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-sass"]

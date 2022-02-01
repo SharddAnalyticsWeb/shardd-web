@@ -9,12 +9,13 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 0.0.0.0 -p 8000 -o",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.5.3",
     "gatsby-plugin-sass": "^5.5.0",
     "react": "^17.0.1",

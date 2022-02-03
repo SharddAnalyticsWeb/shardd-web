@@ -11,8 +11,8 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop -H 0.0.0.0 -p 8000 -o",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve -H 0.0.0.0 -p 9000 -o",
     "clean": "gatsby clean"
   },
   "dependencies": {

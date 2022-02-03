@@ -1,17 +1,7 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 import projects from "../data/projectData"
 
 const ProjectSection = ({ setProjectScreen }) => {
-
-    const handleProject = (id) => {
-        
-        console.log(id)
-        document.addEventListener('mousedown', handleProject);
-
-        return() => {
-            document.removeEventListener('mousedowm', handleProject);
-        }
-    }
 
     return ( 
         <section className="project-section">
@@ -22,10 +12,12 @@ const ProjectSection = ({ setProjectScreen }) => {
                         <div 
                             className="project-card"
                             onClick={() => { setProjectScreen({id: project.id, isOpen: true}); }}
-                            onKeyDown={() => { handleProject(project.id) }}
                             key={project.id}
                         >
-                            <div className="card-image" style={{backgroundImage: 'url('+ project.cardImage + ')'}}></div>
+                            <div className="card-image">
+                                <img src={project.cardImage} alt="card-logo"/>
+                            </div>
+                            
                             <div className="card-des">
                                 <h2>{project.title}</h2>
                                 <p>{project.description}</p>

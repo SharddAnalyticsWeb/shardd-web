@@ -245,9 +245,13 @@ section {
                 width: 100%;
                 aspect-ratio: 1;
                 background: #FFF;
-                background-size: 85%;
-                background-position: center;
-                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 90%;
+                }
             }
 
             .card-des {

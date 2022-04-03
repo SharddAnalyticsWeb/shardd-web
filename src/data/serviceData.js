@@ -2,7 +2,7 @@ const serviceData = [
     {
         "id": 0,
         "title": "Tech Consulting",
-        "image": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1",
+        "image": "https://images.unsplash.com/photo-1647464883962-87783e4c9274",
         "content": "We offer a wide array of services to organizations and individuals, providing dynamic strategies to take your organization to the next level. At Shardd, we leverage the opportunities of the digital age for governments, financial and private companies to advance their digital systems."
     },
     {

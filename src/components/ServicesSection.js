@@ -14,6 +14,7 @@ const ServicesSection = ({ setServiceScreen }) => {
                             className="service-box"
                             onClick={() => { setServiceScreen({id: service.id, isOpen: true}) }} 
                             key={service.id}
+                            id="services"
                         >
                             <div 
                                 className="bg-img" 
